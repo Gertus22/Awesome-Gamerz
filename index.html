@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Gamerz</title>
+    <title>Awesome-Gamerz.com</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,48 +13,113 @@
             background-color: #f9f9f9;
         }
         header {
-            background: url('banner.jpeg') no-repeat center center;
-            background-size: cover;
-            height: 600px;
+            width: 100%;
+            overflow: hidden;
         }
-        header h1 {
-            margin: 0;
-            padding: 0;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: inline-block;
-            padding: 20px;
-            font-size: 2.5em;
-            position: relative;
-            top: 40%;
+        .banner {
+            width: 100%;
+            height: auto;
         }
         .logo {
+            width: 200px;
+            height: auto;
             margin: 20px auto;
-            position: left;
+        }
+        footer {
+            margin: 20px auto;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: float;
+            bottom: 0;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
         }
         .content {
             padding: 20px;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .container-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 40%;
+            min-width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+        }
+        .discord-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #7289da;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .discord-button:hover {
+            background-color: #5b6eae;
+        }
+        .login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="banner.jpeg" alt="Banner" class="banner">
+        <!-- <a href="/profile.html" class="login-button">Login with Discord</a> -->
     </header>
     <main>
-        <div class="logo">
-            <img src="Logo.jpeg" alt="Awesome Gamerz Logo" width="200">
-        </div>
+        <h1>Welcome to Awesome Gamerz!</h1>
         <div class="content">
             <p>This website is dedicated to Farming Simulator 25 enthusiasts. Stay tuned for updates!</p>
+            <p>Join our farming simulation community and experience the best gaming adventures.</p>
+            <p>We are an all Dutch Server</p>
+            <a href="https://discord.gg/2dE69rEQyk" target="_Blank" class="discord-button">Join Our Discord</a>
         </div>
+        <!-- Container 1 -->
+        <div class="container" id="container1">
+        <p> Awesome-Gamerz Dedi Server </p>
+        <p></p>
+        </div>
+        <!-- Container 2 -->
+        <div class="container" id="container2">
+            <p> Awesome-Gamerz Dedi Server Crossplay </p>
+            <p></p>
+        </div>     
     </main>
     <footer>
         <p>&copy; 2025 Awesome Gamerz. All rights reserved.</p>
