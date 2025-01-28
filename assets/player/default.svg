@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 685 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(-2 0 0 -2.11 345 540)" id="SVGRepo_iconCarrier"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  transform=" translate(-256, -256)" d="M 87.084 192 C 86.628 186.728 86.396 181.4 86.396 176 C 86.404 78.8 162.34 0 256.004 0 C 349.668 0 425.60400000000004 78.8 425.60400000000004 176 C 425.60400000000004 181.392 425.372 186.728 424.91600000000005 192 L 425.60400000000004 192 C 425.60400000000004 288.18399999999997 256.004 512 256.004 512 C 256.004 512 86.40400000000002 288.712 86.40400000000002 192 L 87.084 192 z M 256.004 224 C 292.396 225.024 322.74800000000005 196.392 323.84400000000005 160 C 322.74800000000005 123.608 292.3960000000001 94.976 256.004 96 C 219.61200000000002 94.976 189.26000000000002 123.608 188.16400000000002 160 C 189.26 196.392 219.612 225.024 256.004 224 z" stroke-linecap="round" />
+</g>
+</svg>

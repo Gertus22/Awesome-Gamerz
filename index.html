@@ -1,3 +1,4 @@
+Dit is mijn main page van mijn webpagina:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,11 +96,40 @@
         .login-button:hover {
             background-color: #45a049;
         }
+        .live-button {
+            position: left
+            top: 20px;
+            right: 50px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .live-button:hover {
+            background-color: #45a049;
+        }
+        .nav-link {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .nav-link:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="banner.jpeg" alt="Banner" class="banner">
+        <img src="./assets/images/banner.jpeg" alt="Banner" class="banner">
         <!-- <a href="/profile.html" class="login-button">Login with Discord</a> -->
     </header>
     <main>
@@ -112,12 +142,13 @@
         </div>
         <!-- Container 1 -->
         <div class="container" id="container1">
-        <p> Awesome-Gamerz Dedi Server </p>
+        <p> Awesome-Gamerz.com Dedi Server </p>
+        <a  href="/live.html" class="nav-link">Load live map</a>
         <p></p>
         </div>
         <!-- Container 2 -->
         <div class="container" id="container2">
-            <p> Awesome-Gamerz Dedi Server Crossplay </p>
+            <p> Awesome-Gamerz.com Dedi Server Crossplay </p>
             <p></p>
         </div>     
     </main>
