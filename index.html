@@ -141,7 +141,7 @@
         </div>
         <div class="container" id="twitch">
             <p> Last event stream recap</p>
-            <iframe src="https://player.twitch.tv/?video=2364316732&t=02h07m38s&parent=127.0.0.1&muted=true" 
+            <iframe id="twitch-iframe"
                 frameborder="0" 
                 allowfullscreen="true" 
                 scrolling="no" 
@@ -149,7 +149,7 @@
                 width="auto">
             </iframe>
             <p></p> 
-        </div> 
+        </div>
         <!-- Container 1 -->
         <div class="container" id="container1">
         <p> Awesome-Gamerz.com Dedi Server </p>
@@ -161,10 +161,18 @@
             <p> Awesome-Gamerz.com Dedi Server 2 </p>
             <p></p>
         </div>
-               
     </main>
     <footer>
         <p>&copy; 2025 Awesome-Gamerz.com All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var iframe = document.getElementById("twitch-iframe");
+            var parentDomain = window.location.hostname;
+            var videoId = "2364316732";
+            var startTime = "02h07m38s";
+            iframe.src = `https://player.twitch.tv/?video=${videoId}&t=${startTime}&parent=${parentDomain}&muted=true`;
+        });
+    </script>
 </body>
 </html>
