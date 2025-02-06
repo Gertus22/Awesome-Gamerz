@@ -15,5 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var iframe2 = document.getElementById("twitch-iframe2");
     var channel2 = "kann3j"; // Twitch-gebruikersnaam van de tweede streamer
     iframe2.src = `https://player.twitch.tv/?channel=${channel2}&parent=${parentDomain}&muted=true`;
+
+    // Bezoekersaantal bijwerken met localStorage
+    var visitorCountElement = document.getElementById("visitor-count");
+    var visitorCount = localStorage.getItem('visitorCount') || 0;
+    visitorCount++;
+    localStorage.setItem('visitorCount', visitorCount);
+    visitorCountElement.textContent = visitorCount;
 });
 
