@@ -4,127 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome-Gamerz.com</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        header {
-            width: 100%;
-            overflow: hidden;
-        }
-        .banner {
-            width: 100%;
-            height: auto;
-        }
-        .logo {
-            width: 200px;
-            height: auto;
-            margin: 20px auto;
-        }
-        footer {
-            margin: 20px auto;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: float;
-            bottom: 0;
-            width: 100%;
-        }
-        h1 {
-            color: #333;
-        }
-        .content {
-            padding: 20px;
-        }
-        .container-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-            gap: 20px;
-        }
-        .container {
-            margin: 20px auto;
-            width: 40%;
-            min-width: 300px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 100%;
-            }
-        }
-        .discord-button {
-            display: inline-block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #7289da;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .discord-button:hover {
-            background-color: #5b6eae;
-        }
-        .login-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            font-size: 14px;
-            color: #fff;
-            background-color: #4caf50;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .login-button:hover {
-            background-color: #45a049;
-        }
-        .live-button {
-            position: left;
-            top: 20px;
-            right: 50px;
-            padding: 10px 20px;
-            font-size: 14px;
-            color: #fff;
-            background-color: #4caf50;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .live-button:hover {
-            background-color: #45a049;
-        }
-        .nav-link {
-            display: inline-block;
-            margin: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .nav-link:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <header>
@@ -138,41 +18,63 @@
             <p>We are an all Dutch Server/Community</p>
             
             <a href="https://discord.gg/2dE69rEQyk" target="_Blank" class="discord-button">Join Our Discord</a>
+            <div class="discord-widget">
+                <iframe src="https://discord.com/widget?id=1323193852445724682&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+            </div>
         </div>
-        <div class="container" id="twitch">
+        <div class="container-wrapper" id="twitch-profiles">
+            <div class="container">
+                <p>AwesomePrice</p>
+                <iframe id="twitch-iframe1"
+                    frameborder="0" 
+                    allowfullscreen="true" 
+                    scrolling="no" 
+                    height="378" 
+                    width="auto">
+                </iframe>
+            </div>
+            <div class="container">
+                <p>Kann3J</p>
+                <iframe id="twitch-iframe2"
+                    frameborder="0" 
+                    allowfullscreen="true" 
+                    scrolling="no" 
+                    height="378" 
+                    width="auto">
+                </iframe>
+            </div>
+        </div>
+
+        <!--<div class="container" id="twitch">
             <p> Last event stream recap</p>
             <iframe id="twitch-iframe"
-                frameborder="1" 
+                frameborder="0" 
                 allowfullscreen="true" 
                 scrolling="no" 
-                height="430px" 
-                width="100%">
+                height="378" 
+                width="auto">
             </iframe>
             <p></p> 
-        </div>
-        <!-- Container 1 -->
-        <div class="container" id="container1">
-        <p> Awesome-Gamerz.com Dedi Server </p>
-        <a  href="/live.html" class="nav-link">Load live map</a>
-        <p></p>
-        </div>
-        <!-- Container 2 -->
-        <div class="container" id="container2">
-            <p> Awesome-Gamerz.com Dedi Server 2 </p>
-            <p></p>
+        </div>-->
+
+        <div class="container-wrapper">
+            <!-- Container 1 -->
+            <div class="container" id="container1">
+                <p> Awesome-Gamerz.com Dedi Server </p>
+                <a href="/live1.html" class="nav-link">Show map</a>
+                <p></p>
+            </div>
+            <!-- Container 2 -->
+            <div class="container" id="container2">
+                <p> Awesome-Gamerz.com Dedi Server 2 </p>
+                <a href="/live2.html" class="nav-link">Show map</a>
+                <p></p>
+            </div>
         </div>
     </main>
     <footer>
         <p>&copy; 2025 Awesome-Gamerz.com All rights reserved.</p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var iframe = document.getElementById("twitch-iframe");
-            var parentDomain = window.location.hostname;
-            var videoId = "2364316732";
-            var startTime = "02h07m38s";
-            iframe.src = `https://player.twitch.tv/?video=${videoId}&t=${startTime}&parent=${parentDomain}&muted=true`;
-        });
-    </script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
