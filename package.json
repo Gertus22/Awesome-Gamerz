@@ -1,0 +1,26 @@
+{
+  "name": "awesome-gamerz",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gertus22/Awesome-Gamerz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gertus22/Awesome-Gamerz/issues"
+  },
+  "homepage": "https://github.com/Gertus22/Awesome-Gamerz#readme",
+  "dependencies": {
+    "discord.js": "^14.18.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+
+}
