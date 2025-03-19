@@ -191,8 +191,8 @@ h1 {
 .lightbox-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 70%;
+    max-width: 2000px;
 }
 .close {
     position: absolute;
